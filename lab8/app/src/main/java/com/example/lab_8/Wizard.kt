@@ -7,7 +7,7 @@ class Wizard(val name: String, var mana: Int, var spellPower: Int) {
                 if (mana >= 10) {
                     mana -= 10
                     return spellPower * 3
-                } else return 0 // not enough mana
+                } else return 0 // not enough man
             }
             "Frostbite" -> {
                 if (mana >= 5) {
@@ -18,6 +18,6 @@ class Wizard(val name: String, var mana: Int, var spellPower: Int) {
             else -> {
                 return 0 // invalid spell
             }
-        }
+        } // comment
     }
 }
